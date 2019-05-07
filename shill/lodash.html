@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.12-pre/lodash.min.js"></script>
+    <script>
+        var user = {
+            info: {
+                // avatar: [
+                //     'https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike180%2C5%2C5%2C180%2C60/sign=e321ccaa52df8db1a8237436684ab631/3ac79f3df8dcd10005e035137e8b4710b9122f80.jpg',
+                //     'https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=3ae5c064b4a1cd1111bb7a72d87ba399/0824ab18972bd407f7c3f7a975899e510fb30959.jpg',
+                // ]
+            }
+        }
+        const img1 = (user&&user.info&&user.info.avatar&&user.info.avatar[1])||'default image';
+        const img2 =_.get(user,['info','avatar',1],'default image')
+    </script>
+</body>
+
+</html>
